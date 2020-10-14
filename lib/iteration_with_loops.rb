@@ -9,8 +9,7 @@ def find_min_in_nested_arrays(src)
     lowest_value = current_array[0]
     while element_index < current_array.count do
       if current_array[element_index] < lowest_value
-        lowest_numbers.push(current_array[element_index])
-      else
+        lowest_value = current_array[element_index]
         lowest_numbers.push(lowest_value)
       end
     element_index += 1
